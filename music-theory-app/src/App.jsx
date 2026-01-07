@@ -1,11 +1,13 @@
 import './App.css'
+import Navbar from './components/Navbar'
 
 function App() {
 
   return (
+    
     <div className="App">
-      <h1>Music Theory App</h1>
-
+      <Navbar />
+      {/* Main content goes here */}  
     </div>
   )
 }

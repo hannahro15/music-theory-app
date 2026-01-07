@@ -7,10 +7,16 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@shadcn/ui": "^0.0.4",
+    "bootstrap": "^5.3.8",
+    "gh-pages": "^6.3.0",
     "react": "^19.2.0",
+    "react-bootstrap": "^2.10.10",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.11.0",
     "vexflow": "^5.0.0"
