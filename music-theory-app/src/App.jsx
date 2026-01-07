@@ -8,7 +8,7 @@ function App() {
   return (
     
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/music-theory-app">
       <Navbar />
       <Routes>
         <Route path="/" element={<h1>Home</h1>} />
