@@ -13,7 +13,7 @@ function Navbar() {
             <Nav.Link href="#home">Home</Nav.Link>
 
             <NavDropdown title="Theory" id="theory-dropdown">
-              <NavDropdown.Item href="#scales">Scales</NavDropdown.Item>
+              <NavDropdown.Item href="/scales">Scales</NavDropdown.Item>
               <NavDropdown.Item href="#arpeggios">Arpeggios</NavDropdown.Item>
               <NavDropdown.Item href="#dom-dim">Dominant and Diminished 7ths</NavDropdown.Item>
               <NavDropdown.Item href="#chord-construction">Chord Construction</NavDropdown.Item>
@@ -23,7 +23,7 @@ function Navbar() {
             </NavDropdown>
                 
             <NavDropdown title="Activities" id="quizzes-dropdown">
-              <NavDropdown.Item href="#ear-training">Ear training</NavDropdown.Item>
+              <NavDropdown.Item href="/ear-training">Ear training</NavDropdown.Item>
               <NavDropdown.Item href="#notation">Notation</NavDropdown.Item>
               <NavDropdown.Item href="#intervals">Intervals</NavDropdown.Item>
               <NavDropdown.Item href="#chords">Chords</NavDropdown.Item>
