@@ -1,26 +1,39 @@
 import { Component } from 'react';
-import { Renderer, Stave } from 'vexflow';
+import { Factory } from 'vexflow';
 
 class MajorScale extends Component {
   componentDidMount() {
     const container = document.getElementById('c-major-scale');
     if (!container) return;
     
+    // Clear any existing content to prevent double rendering
     container.innerHTML = '';
     
-    // Create SVG renderer
-    const renderer = new Renderer(container, Renderer.Backends.SVG);
-    renderer.resize(700, 200);
-    const context = renderer.getContext();
-    
-    // Create and draw stave
-    const stave = new Stave(10, 40, 650);
-    stave.addClef('treble');
-    stave.setContext(context).draw();
+    const vf = new Factory({
+      renderer: {
+        elementId: 'c-major-scale',
+        width: 700,
+        height: 200,
+      },
+    });
+
+    const score = vf.EasyScore();
+    const system = vf.System();
+
+    system.addStave({
+      voices: [
+        score.voice(
+          score.notes('C4/q, D4/q, E4/q, F4/q, G4/q, A4/q, B4/q, C5/q'),
+          { time: '8/4' }
+        ),
+      ],
+    }).addClef('treble');
+
+    vf.draw();
   }
 
   render() {
-    return <div id="c-major-scale"></div>;
+    return <div id="c-major-scale" />;
   }
 }
 
