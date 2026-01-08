@@ -1,20 +1,20 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { Navbar as RBNavbar, Nav, NavDropdown, Container, Dropdown } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
   return (
     <RBNavbar bg="dark" variant="dark" expand="lg">
       <Container>
-        <RBNavbar.Brand as={Link} to="/">Music Theory</RBNavbar.Brand>
+        <RBNavbar.Brand as={NavLink} to="/">Music Theory</RBNavbar.Brand>
         <RBNavbar.Toggle aria-controls="main-nav" />
         <RBNavbar.Collapse id="main-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <Nav.Link as={NavLink} to="/">Home</Nav.Link>
 
             <NavDropdown title="Theory" id="theory-dropdown">
-              <NavDropdown.Item as={Link} to="/scales">Scales</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/scales">Scales</NavDropdown.Item>
               <NavDropdown.Item href="#arpeggios">Arpeggios</NavDropdown.Item>
               <NavDropdown.Item href="#dom-dim">Dominant and Diminished 7ths</NavDropdown.Item>
               <NavDropdown.Item href="#chord-construction">Chord Construction</NavDropdown.Item>
@@ -24,7 +24,7 @@ function Navbar() {
             </NavDropdown>
                 
             <NavDropdown title="Activities" id="quizzes-dropdown">
-              <NavDropdown.Item as={Link} to="/ear-training">Ear training</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/ear-training">Ear training</NavDropdown.Item>
               <NavDropdown.Item href="#notation">Notation</NavDropdown.Item>
               <NavDropdown.Item href="#intervals">Intervals</NavDropdown.Item>
               <NavDropdown.Item href="#chords">Chords</NavDropdown.Item>
