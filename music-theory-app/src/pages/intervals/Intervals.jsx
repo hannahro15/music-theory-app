@@ -1,6 +1,6 @@
 import Min2nd from './min2nd.jsx';
 import Maj2nd from './maj2nd.jsx';
-import Min3rd from './Min3rd.jsx';
+import Min3rd from './min3rd.jsx';
 import Maj3rd from './maj3rd.jsx';
 
 function Intervals() {

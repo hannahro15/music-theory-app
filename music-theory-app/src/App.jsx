@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'
 import { Routes, Route } from 'react-router-dom'
 import Scales from './pages/scales/scales.jsx'
 import Home from './pages/home/home.jsx'
-import Intervals from './pages/intervals/Intervals.jsx'
+import Intervals from './pages/intervals/intervals.jsx'
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/scales" element={<Scales />} />
         <Route path="/ear-training" element={<h1>Ear Training</h1>} />
-        <Route path="/Intervals" element={<Intervals />} />
+        <Route path="/intervals" element={<Intervals />} />
       </Routes>
     </div>
   )
