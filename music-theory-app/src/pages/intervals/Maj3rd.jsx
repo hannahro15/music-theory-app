@@ -1,6 +1,6 @@
-import { component } from 'react';
+import { Component } from 'react';
 
-class Maj3rd extends component {
+class Maj3rd extends Component {
   render() {
     return (
       <div style={{ border: '2px solid grey', padding: '20px', margin: '20px' }}>
