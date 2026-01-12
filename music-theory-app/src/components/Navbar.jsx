@@ -20,7 +20,7 @@ function Navbar() {
               <NavDropdown.Item href="#chord-construction">Chord Construction</NavDropdown.Item>
               <NavDropdown.Item href="#circle-of-fifths">Circle of Fifths</NavDropdown.Item>
               <NavDropdown.Item href="#key-signatures">Key Signatures</NavDropdown.Item>
-              <NavDropdown.Item href="#intervals">Intervals</NavDropdown.Item>
+              <NavDropdown.Item  as={NavLink} to="/intervals">Intervals</NavDropdown.Item>
             </NavDropdown>
                 
             <NavDropdown title="Activities" id="quizzes-dropdown">
