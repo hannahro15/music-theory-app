@@ -5,6 +5,11 @@ import Maj3rd from './Maj3rd.jsx';
 import Perfect4th from './Perfect4th.jsx';
 import Tritone from './Tritone.jsx';
 import Perfect5th from './Perfect5th.jsx';
+import Min6th from './Min6th.jsx';
+import Maj6th from './Maj6th.jsx';
+import Min7th from './Min7th.jsx';
+import Maj7th from './Maj7th.jsx';
+import Octave from './Octave.jsx';
 
 function Intervals() {
   return (
@@ -18,11 +23,11 @@ function Intervals() {
       <Perfect4th />
       <Tritone />   
       <Perfect5th />
-      <div>Minor 6th</div>
-      <div>Major 6th</div>
-      <div>Minor 7th</div>
-      <div>Major 7th</div>
-      <div>Octave</div>
+      <Min6th />
+      <Maj6th />
+      <Min7th />
+      <Maj7th />
+      <Octave />
     </div>
   );
 }
