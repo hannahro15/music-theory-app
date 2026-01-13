@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NODE_ENV === 'production' ? '/music-theory-app/' : '/',
+  base: import.meta.env.NODE_ENV === 'production' ? '/music-theory-app/' : '/',
 })
