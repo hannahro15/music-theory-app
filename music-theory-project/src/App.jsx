@@ -1,12 +1,11 @@
 import './App.css'
-import Navbar from './components/Navbar'
+import Navbar from './components/layout/Navbar.jsx'
 import { Routes, Route } from 'react-router-dom'
 import Scales from './pages/scales/scales.jsx'
-import Home from './pages/home/home.jsx'
+import Home from './pages/home/Home.jsx'
 import Intervals from './pages/intervals/intervals.jsx'
 
-function App() {
-
+export default function App() {
   return (
     <div className="App">
       <Navbar />
@@ -19,5 +18,3 @@ function App() {
     </div>
   )
 }
-
-export default App

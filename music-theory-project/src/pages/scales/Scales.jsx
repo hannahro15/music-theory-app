@@ -1,8 +1,8 @@
-import MajorScale from '../../components/MajorScale';
-import HarmonicMinorScale from '../../components/HarmonicMinorScale';
-import MelodicMinorScale from '../../components/MelodicMinorScale';
+import MajorScale from '../../components/scales/MajorScale';
+import HarmonicMinorScale from '../../components/scales/HarmonicMinorScale';
+import MelodicMinorScale from '../../components/scales/MelodicMinorScale';
 
-function Scales() {
+export default function Scales() {
   return (
     <div style={{ padding: '2rem' }}>
       <h1>Scales</h1>
@@ -21,5 +21,3 @@ function Scales() {
     </div>
   );
 }
-
-export default Scales;

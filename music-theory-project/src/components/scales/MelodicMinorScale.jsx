@@ -1,12 +1,11 @@
-import { Component } from 'react';
+import { useEffect } from 'react';
 import { Factory } from 'vexflow';
 
-class MelodicMinorScale extends Component {
-  componentDidMount() {
+export default function MelodicMinorScale() {
+  useEffect(() => {
     const container = document.getElementById('c-melodic-minor-scale');
     if (!container) return;
     
-    // Clear any existing content to prevent double rendering
     container.innerHTML = '';
     
     const vf = new Factory({
@@ -30,11 +29,7 @@ class MelodicMinorScale extends Component {
     }).addClef('treble');
 
     vf.draw();
-  }
+  }, []);
 
-  render() {
     return <div id="c-melodic-minor-scale" />;
   }
-}
-
-export default MelodicMinorScale;

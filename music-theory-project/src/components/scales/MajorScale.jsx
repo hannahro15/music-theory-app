@@ -1,12 +1,11 @@
-import { Component } from 'react';
+import { useEffect } from 'react';
 import { Factory } from 'vexflow';
 
-class MajorScale extends Component {
-  componentDidMount() {
+export default function MajorScale(){
+  useEffect(() => {
     const container = document.getElementById('c-major-scale');
     if (!container) return;
     
-    // Clear any existing content to prevent double rendering
     container.innerHTML = '';
     
     const vf = new Factory({
@@ -30,11 +29,7 @@ class MajorScale extends Component {
     }).addClef('treble');
 
     vf.draw();
-  }
+  }, []);
 
-  render() {
     return <div id="c-major-scale" />;
-  }
 }
-
-export default MajorScale;

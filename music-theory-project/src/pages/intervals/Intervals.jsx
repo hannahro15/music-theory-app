@@ -1,17 +1,17 @@
-import Min2nd from './Min2nd.jsx';
-import Maj2nd from './Maj2nd.jsx';
-import Min3rd from './Min3rd.jsx';
-import Maj3rd from './Maj3rd.jsx';
-import Perfect4th from './Perfect4th.jsx';
-import Tritone from './Tritone.jsx';
-import Perfect5th from './Perfect5th.jsx';
-import Min6th from './Min6th.jsx';
-import Maj6th from './Maj6th.jsx';
-import Min7th from './Min7th.jsx';
-import Maj7th from './Maj7th.jsx';
-import Octave from './Octave.jsx';
+import Min2nd from '../../components/intervals/Min2nd.jsx';
+import Maj2nd from '../../components/intervals/Maj2nd.jsx';
+import Min3rd from '../../components/intervals/Min3rd.jsx';
+import Maj3rd from '../../components/intervals/Maj3rd.jsx';
+import Perfect4th from '../../components/intervals/Perfect4th.jsx';
+import Tritone from '../../components/intervals/Tritone.jsx';
+import Perfect5th from '../../components/intervals/Perfect5th.jsx';
+import Min6th from '../../components/intervals/Min6th.jsx';
+import Maj6th from '../../components/intervals/Maj6th.jsx';
+import Min7th from '../../components/intervals/Min7th.jsx';
+import Maj7th from '../../components/intervals/Maj7th.jsx';
+import Octave from '../../components/intervals/Octave.jsx';
 
-function Intervals() {
+export default function Intervals() {
   return (
     <div>
       <h1>Intervals Page</h1>
@@ -30,6 +30,4 @@ function Intervals() {
       <Octave />
     </div>
   );
-}
-
-export default Intervals;
+};

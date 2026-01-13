@@ -3,7 +3,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { Navbar as RBNavbar, Nav, NavDropdown, Container, Dropdown } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
-function Navbar() {
+export default function Navbar() {
   return (
     <RBNavbar bg="dark" variant="dark" expand="lg">
       <Container>
@@ -49,5 +49,3 @@ function Navbar() {
     </RBNavbar>
   );
 }
-
-export default Navbar;

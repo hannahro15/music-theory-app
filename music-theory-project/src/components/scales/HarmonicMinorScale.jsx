@@ -1,12 +1,11 @@
-import { Component } from 'react';
+import { useEffect } from 'react';
 import { Factory } from 'vexflow';
 
-class HarmonicMinorScale extends Component {
-  componentDidMount() {
+export default function HarmonicMinorScale() {
+  useEffect(() => {
     const container = document.getElementById('c-harmonic-minor-scale');
     if (!container) return;
     
-    // Clear any existing content to prevent double rendering
     container.innerHTML = '';
     
     const vf = new Factory({
@@ -30,11 +29,7 @@ class HarmonicMinorScale extends Component {
     }).addClef('treble');
 
     vf.draw();
-  }
+  }, []);
 
-  render() {
     return <div id="c-harmonic-minor-scale" />;
-  }
 }
-
-export default HarmonicMinorScale;

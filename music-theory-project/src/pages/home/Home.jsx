@@ -1,4 +1,4 @@
-function Home () {
+export default function Home () {
     return (
         <div class="home-page-container" style={{ padding: '2rem', textAlign: 'center' }}>
             <h1>Welcome to the Music Theory App</h1>
@@ -6,5 +6,3 @@ function Home () {
         </div>
     );
 }
-
-export default Home;
