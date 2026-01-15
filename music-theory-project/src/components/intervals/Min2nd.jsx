@@ -11,7 +11,7 @@ export default function Min2nd() {
           const vf = new Factory({
             renderer: {
               elementId: 'min-2nd-interval',
-              width: 400,
+              width: 700,
               height: 200,
             },
           });
@@ -29,6 +29,7 @@ export default function Min2nd() {
       
           vf.draw();
        }, []);
+       
        return (
     <div style={{ border: '2px solid red', padding: '20px', margin: '20px' }}>
       <p>Minor 2nd interval (C to Db)</p>

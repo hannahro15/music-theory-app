@@ -1,16 +1,16 @@
 import { useEffect } from 'react';
 import { Factory } from 'vexflow';
 
-export default function Arpeggios() {
+export default function Dim7th() {
       useEffect(() => {
-          const container = document.getElementById('c-major-arpeggio');
+          const container = document.getElementById('dim-7th');
           if (!container) return;
           
           container.innerHTML = '';
           
           const vf = new Factory({
             renderer: {
-              elementId: 'c-major-arpeggio',
+              elementId: 'dim-7th',
               width: 700,
               height: 150,
             },
@@ -22,8 +22,8 @@ export default function Arpeggios() {
             system.addStave({
             voices: [
             score.voice(
-            score.notes('C4/q, E4/q, G4/q, C5/q, G4/q, E4/q, C4/q', { stem: 'up' }),
-                { time: '7/4' }
+            score.notes('C4/q, Eb4/q, Gb4/q, A4/q, C5/q, A4/q, Gb4/q, Eb4/q, C4/q', { stem: 'up' }),
+                { time: '9/4' }
         ),
       ],
     }).addClef('treble');
@@ -31,6 +31,6 @@ export default function Arpeggios() {
           vf.draw();
         }, []);
       
-          return <div id="c-major-arpeggio" />;
+          return <div id="dim-7th" />;
       }
   
