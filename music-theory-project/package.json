@@ -19,7 +19,7 @@
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.11.0",
-    "vexflow": "^5.0.0"
+    "vexflow": "^4.2.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

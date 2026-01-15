@@ -15,9 +15,7 @@ export default function Navbar() {
 
             <NavDropdown title="Theory" id="theory-dropdown">
               <NavDropdown.Item as={NavLink} to="/scales">Scales</NavDropdown.Item>
-              <NavDropdown.Item href="#arpeggios">Arpeggios</NavDropdown.Item>
-              <NavDropdown.Item href="#dom-dim">Dominant and Diminished 7ths</NavDropdown.Item>
-              <NavDropdown.Item href="#chord-construction">Chord Construction</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/arpeggios">Arpeggios and 7th Chords</NavDropdown.Item>
               <NavDropdown.Item href="#circle-of-fifths">Circle of Fifths</NavDropdown.Item>
               <NavDropdown.Item href="#key-signatures">Key Signatures</NavDropdown.Item>
               <NavDropdown.Item  as={NavLink} to="/intervals">Intervals</NavDropdown.Item>

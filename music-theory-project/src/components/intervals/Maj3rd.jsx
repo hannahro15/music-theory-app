@@ -5,3 +5,4 @@ export default function Maj3rd() {
       </div>
     );
   }
+  
