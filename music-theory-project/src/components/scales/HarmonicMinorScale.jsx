@@ -22,8 +22,8 @@ export default function HarmonicMinorScale() {
     system.addStave({
       voices: [
         score.voice(
-          score.notes('C4/q, D4/q, Eb4/q, F4/q, G4/q, Ab4/q, B4/q, C5/q'),
-          { time: '8/4' }
+          score.notes('C4/q, D4/q, Eb4/q, F4/q, G4/q, Ab4/q, B4/q, C5/q, B4/q, Ab4/q, G4/q, F4/q, Eb4/q, D4/q, C4/q'),
+          { time: '15/4' }
         ),
       ],
     }).addClef('treble');

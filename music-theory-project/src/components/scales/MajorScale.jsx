@@ -22,8 +22,8 @@ export default function MajorScale(){
     system.addStave({
       voices: [
         score.voice(
-          score.notes('C4/q, D4/q, E4/q, F4/q, G4/q, A4/q, B4/q, C5/q'),
-          { time: '8/4' }
+          score.notes('C4/q, D4/q, E4/q, F4/q, G4/q, A4/q, B4/q, C5/q, B4/q, A4/q, G4/q, F4/q, E4/q, D4/q, C4/q'),
+          { time: '15/4' }
         ),
       ],
     }).addClef('treble');
