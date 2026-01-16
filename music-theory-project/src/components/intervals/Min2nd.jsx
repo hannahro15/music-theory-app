@@ -21,20 +21,15 @@ export default function Min2nd() {
           system.addStave({
             voices: [
               score.voice(
-                score.notes('C4 Db4/w', {stem: 'up'}), 
-                { time: '1/1'}
+                score.notes('C4/q, Db4/q', {stem: 'up'}), 
+                { time: '2/4'}
               ),
             ],
           }).addClef('treble');
       
           vf.draw();
        }, []);
-       
-       return (
-    <div style={{ border: '2px solid red', padding: '20px', margin: '20px' }}>
-      <p>Minor 2nd interval (C to Db)</p>
-      <div id="min-2nd-interval" />
-    </div>
-  );
+
+       return <div id="min-2nd-interval" />
   }
 

@@ -1,7 +1,35 @@
+import { useEffect } from 'react';
+import { Factory } from 'vexflow';
+
 export default function Min7th() {
-    return (
-      <div style={{ border: '2px solid gold', padding: '20px', margin: '20px' }}>
-        <p>Minor 7th interval (C to Bb)</p>
-      </div>
-    );
+       useEffect(() => {
+          const container = document.getElementById('min-7th-interval');
+          if (!container) return;
+          
+          container.innerHTML = '';
+          
+          const vf = new Factory({
+            renderer: {
+              elementId: 'min-7th-interval',
+              width: 700,
+              height: 200,
+            },
+          });
+          const score = vf.EasyScore();
+          const system = vf.System();
+      
+          system.addStave({
+            voices: [
+              score.voice(
+                score.notes('C4/q, Bb4/q', {stem: 'up'}), 
+                { time: '2/4'}
+              ),
+            ],
+          }).addClef('treble');
+      
+          vf.draw();
+       }, []);
+
+       return <div id="min-7th-interval" />
   }
+

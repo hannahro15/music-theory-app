@@ -16,18 +16,30 @@ export default function Intervals() {
     <div>
       <h1>Intervals Page</h1>
       <p>This is the Intervals page content.</p>
+      <h2>Minor 2nd</h2>
       <Min2nd />
+      <h2>Major 2nd</h2>
       <Maj2nd />
+      <h2>Minor 3rd</h2>
       <Min3rd />
+      <h2>Major 3rd</h2>
       <Maj3rd />
+      <h2>Perfect 4th</h2>
       <Perfect4th />
-      <Tritone />   
+      <h2>Tritone (or augmented 4th)</h2>
+      <Tritone />
+      <h2>Perfect 5th</h2>
       <Perfect5th />
+      <h2>Minor 6th</h2>
       <Min6th />
+      <h2>Major 6th</h2>
       <Maj6th />
+      <h2>Minor 7th</h2>
       <Min7th />
+      <h2>Major 7th</h2>
       <Maj7th />
-      <Octave />
+      <h2>Octave</h2>
+      <Octave />  
     </div>
   );
 };
