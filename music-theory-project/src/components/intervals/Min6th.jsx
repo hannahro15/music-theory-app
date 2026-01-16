@@ -12,7 +12,7 @@ export default function Min6th() {
             renderer: {
               elementId: 'min-6th-interval',
               width: 700,
-              height: 200,
+              height: 150,
             },
           });
           const score = vf.EasyScore();

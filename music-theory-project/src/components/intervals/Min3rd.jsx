@@ -12,7 +12,7 @@ export default function Min3rd() {
             renderer: {
               elementId: 'min-3rd-interval',
               width: 700,
-              height: 200,
+              height: 150,
             },
           });
           const score = vf.EasyScore();

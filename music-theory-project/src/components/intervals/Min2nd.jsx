@@ -12,7 +12,7 @@ export default function Min2nd() {
             renderer: {
               elementId: 'min-2nd-interval',
               width: 700,
-              height: 200,
+              height: 150,
             },
           });
           const score = vf.EasyScore();

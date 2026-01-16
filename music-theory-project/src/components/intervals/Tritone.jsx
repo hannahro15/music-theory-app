@@ -12,7 +12,7 @@ export default function Tritone() {
             renderer: {
               elementId: 'tritone-interval',
               width: 700,
-              height: 200,
+              height: 150,
             },
           });
           const score = vf.EasyScore();

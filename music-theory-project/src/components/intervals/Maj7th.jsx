@@ -12,7 +12,7 @@ export default function Maj7th() {
             renderer: {
               elementId: 'maj-7th-interval',
               width: 700,
-              height: 200,
+              height: 150,
             },
           });
           const score = vf.EasyScore();

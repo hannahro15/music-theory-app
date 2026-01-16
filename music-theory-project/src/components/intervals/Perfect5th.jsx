@@ -12,7 +12,7 @@ export default function Perfect5th() {
             renderer: {
               elementId: 'perfect-5th-interval',
               width: 700,
-              height: 200,
+              height: 150,
             },
           });
           const score = vf.EasyScore();

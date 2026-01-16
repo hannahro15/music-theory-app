@@ -12,7 +12,7 @@ export default function Maj2nd() {
             renderer: {
               elementId: 'maj-2nd-interval',
               width: 700,
-              height: 200,
+              height: 150,
             },
           });
           const score = vf.EasyScore();

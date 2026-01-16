@@ -12,7 +12,7 @@ export default function Min7th() {
             renderer: {
               elementId: 'min-7th-interval',
               width: 700,
-              height: 200,
+              height: 150,
             },
           });
           const score = vf.EasyScore();

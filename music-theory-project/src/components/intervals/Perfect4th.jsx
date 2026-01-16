@@ -12,7 +12,7 @@ export default function Perfect4th() {
             renderer: {
               elementId: 'perfect-4th-interval',
               width: 700,
-              height: 200,
+              height: 150,
             },
           });
           const score = vf.EasyScore();

@@ -12,7 +12,7 @@ export default function Octave() {
             renderer: {
               elementId: 'octave-interval',
               width: 700,
-              height: 200,
+              height: 150,
             },
           });
           const score = vf.EasyScore();

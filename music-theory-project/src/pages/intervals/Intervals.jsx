@@ -15,11 +15,13 @@ export default function Intervals() {
   return (
     <div>
       <h1>Intervals Page</h1>
-      <p>This is the Intervals page content.</p>
+      <p>This is the Intervals page showing all the different intervals.</p>
       <h2>Minor 2nd</h2>
       <Min2nd />
+      <p>This interval is semitone apart (neighbouring notes).</p>
       <h2>Major 2nd</h2>
       <Maj2nd />
+      <p>This interval is two semitones apart (or a tone). </p>
       <h2>Minor 3rd</h2>
       <Min3rd />
       <h2>Major 3rd</h2>
@@ -28,6 +30,7 @@ export default function Intervals() {
       <Perfect4th />
       <h2>Tritone (or augmented 4th)</h2>
       <Tritone />
+      <p>A tritone is also known as an diminished 5th but then the interval would be from a C to a Gb. (It still sounds the same, but different naming conventions).</p>
       <h2>Perfect 5th</h2>
       <Perfect5th />
       <h2>Minor 6th</h2>
