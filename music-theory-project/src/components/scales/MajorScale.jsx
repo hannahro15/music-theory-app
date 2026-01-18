@@ -12,7 +12,7 @@ export default function MajorScale(){
       renderer: {
         elementId: 'c-major-scale',
         width: 700,
-        height: 200,
+        height: 150,
       },
     });
 

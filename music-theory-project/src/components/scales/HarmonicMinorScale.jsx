@@ -12,7 +12,7 @@ export default function HarmonicMinorScale() {
       renderer: {
         elementId: 'c-harmonic-minor-scale',
         width: 700,
-        height: 200,
+        height: 150,
       },
     });
 

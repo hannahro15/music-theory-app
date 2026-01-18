@@ -12,7 +12,7 @@ export default function MelodicMinorScale() {
       renderer: {
         elementId: 'c-melodic-minor-scale',
         width: 1300,
-        height: 200,
+        height: 150,
       },
     });
 
