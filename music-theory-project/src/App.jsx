@@ -5,6 +5,7 @@ import Scales from './pages/scales/scales.jsx'
 import Home from './pages/home/Home.jsx'
 import Intervals from './pages/intervals/intervals.jsx'
 import Arpeggios_7ths from './pages/arpeggios/Arpeggios_7ths.jsx'
+import MusicalGlossary from './pages/Musical-glossary.jsx'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/arpeggios" element={<Arpeggios_7ths />} />
         <Route path="/ear-training" element={<h1>Ear Training</h1>} />
         <Route path="/intervals" element={<Intervals />} />
+        <Route path="/musical-glossary" element={<MusicalGlossary />} />
       </Routes>
     </div>
   )
