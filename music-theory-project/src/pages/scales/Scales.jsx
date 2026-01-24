@@ -1,10 +1,11 @@
 import MajorScale from '../../components/scales/MajorScale';
 import HarmonicMinorScale from '../../components/scales/HarmonicMinorScale';
 import MelodicMinorScale from '../../components/scales/MelodicMinorScale';
+import './scales.css';
 
 export default function Scales() {
   return (
-    <div style={{ padding: '2rem' }}>
+    <div className="scales" style={{ padding: '2rem' }}>
       <h1>Scales</h1>
       <p>Learn about different musical scales. Here is an example of C major, C harmonic minor and C melodic minor scales below.</p>
       

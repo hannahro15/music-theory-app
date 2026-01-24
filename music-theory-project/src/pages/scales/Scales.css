@@ -1,0 +1,8 @@
+.scales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    text-align: center;
+}
