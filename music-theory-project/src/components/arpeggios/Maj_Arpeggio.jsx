@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Factory } from 'vexflow';
 
-export default function Arpeggios() {
+export default function MajArpeggio() {
       useEffect(() => {
           const container = document.getElementById('c-major-arpeggio');
           if (!container) return;
