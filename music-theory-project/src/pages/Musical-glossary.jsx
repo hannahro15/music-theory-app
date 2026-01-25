@@ -14,6 +14,13 @@ export default function MusicalGlossary() {
             <li><strong>Arpeggio:</strong> A type of broken chord where the notes are played in succession rather than simultaneously.</li>
             <li><strong>Dynamics:</strong> The variations in loudness between notes or phrases in music.</li>
             <li><strong>Tempo:</strong> The speed at which a piece of music is played.</li>
+            <li><strong>Harmony:</strong> The combination of different musical notes played or sung simultaneously to produce a pleasing sound.</li>
+            <li><strong>Melody:</strong> A sequence of musical notes that are perceived as a single entity, often the main theme of a piece.</li>
+            <li><strong>Cadence:</strong> A sequence of chords that brings a phrase, section, or piece of music to a close.</li>
+            <li><strong>Modulation:</strong> The process of changing from one key to another within a piece of music.</li>
+            <li><strong>Octave:</strong> The interval between one musical pitch and another with half or double its frequency.</li>
+            <li><strong>Syncopation:</strong> A rhythmic concept where emphasis is placed on normally unaccented beats or parts of beats.</li>
+            <li><strong>Timbre:</strong> The quality or color of a musical sound that distinguishes different types of sound production, such as voices or instruments.</li>
         </ul>
 
         <h2>Italian Terms</h2>
@@ -32,6 +39,20 @@ export default function MusicalGlossary() {
             <li><strong>Vivace:</strong> Lively and fast tempo.</li>
             <li><strong>Ritenuto:</strong> Suddenly slower.</li>
             <li><strong>Accelerando:</strong> Gradually getting faster.</li>
+            <li><strong>Fortissimo (ff):</strong> Very loud.</li>
+            <li><strong>Pianissimo (pp):</strong> Very soft.</li>
+            <li><strong>Calando: </strong> Gradually getting softer and slower.</li>
+            <li><strong>Sforzando (sfz):</strong> A sudden strong accent on a note or chord.</li>
+            <li><strong>Marcato:</strong> Marked or accented.</li>
+            <li><strong>Tenuto:</strong> Held or sustained.</li>
+            <li><strong>Rubato:</strong> Flexible tempo for expressive purposes.</li>
+            <li><strong>Da Capo (D.C.):</strong> From the beginning.</li>
+            <li><strong>Dal Segno (D.S.):</strong> From the sign.</li>
+            <li><strong>Coda:</strong> A concluding section of a piece of music.</li>
+            <li><strong>Ottava (8va):</strong> Play an octave higher than written.</li>
+            <li><strong>Ottava Bassa (8vb):</strong> Play an octave lower than written.</li>
+            <li><strong>Glissando:</strong> A continuous slide upward or downward between two notes.</li>
+            <li><strong>Portamento:</strong> A smooth, sliding transition from one note to another.</li>
         </ul>
     </div>
   );
