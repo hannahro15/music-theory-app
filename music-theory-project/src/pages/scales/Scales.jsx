@@ -14,7 +14,7 @@ export default function Scales() {
       <p>In a major scale, the 3rd and 6th notes are raised compared to the natural minor. It follows a pattern using semitones and tones between the notes which is T-T-ST-T-T-T-ST. The major scale is the same ascending as descending. </p>
       </div>
       <div className="scale-container">
-      <h2>Minor Scale</h2>
+      <h2>Minor Scales</h2>
       <h3>Harmonic Minor</h3>
       <HarmonicMinorScale />
       <p>In a harmonic minor scale, the 3rd note and 6th notes are lowered, and the 7th note (otherwise known as a leading note) is raised compared to the natural minor. The pattern for this using semitones and tones are T-ST-T-T-ST-T+ST-ST. The scale is the same ascending as descending.</p>
