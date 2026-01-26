@@ -11,8 +11,8 @@ export default function MelodicMinorScale() {
     const vf = new Factory({
       renderer: {
         elementId: 'c-melodic-minor-scale',
-        width: 1300,
-        height: 150,
+        width: 700,
+        height: 150, 
       },
     });
 
