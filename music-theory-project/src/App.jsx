@@ -1,9 +1,9 @@
 import './App.css'
 import Navbar from './components/layout/Navbar.jsx'
 import { Routes, Route } from 'react-router-dom'
-import Scales from './pages/scales/scales.jsx'
+import Scales from './pages/scales/Scales.jsx'
 import Home from './pages/home/Home.jsx'
-import Intervals from './pages/intervals/intervals.jsx'
+import Intervals from './pages/intervals/Intervals.jsx'
 import Arpeggios_7ths from './pages/arpeggios/Arpeggios_7ths.jsx'
 import MusicalGlossary from './pages/Musical-glossary.jsx'
 

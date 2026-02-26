@@ -1,13 +1,14 @@
 import MajorScale from '../../components/scales/MajorScale';
+import NaturalMinorScale from '../../components/scales/NaturalMinorScale';
 import HarmonicMinorScale from '../../components/scales/HarmonicMinorScale';
 import MelodicMinorScale from '../../components/scales/MelodicMinorScale';
-import './scales.css';
+import './Scales.css';
 
 export default function Scales() {
   return (
     <div className="scales" style={{ padding: '2rem' }}>
       <h1>Scales</h1>
-      <p>Learn about different musical scales. Here is an example of C major, C harmonic minor and C melodic minor scales below.</p>
+      <p>Learn about different musical scales. Here are examples of C major and C minor scales below.</p>
       <div className="scale-container">
         <h2>Major Scale</h2>
         <MajorScale />
@@ -15,6 +16,9 @@ export default function Scales() {
       </div>
       <div className="scale-container">
         <h2>Minor Scales</h2>
+        <h3>Natural Minor</h3>
+        <NaturalMinorScale />
+        <p>The natural minor scale (also called the Aeolian mode) follows the pattern T-ST-T-T-ST-T-T. It has a flattened 3rd, 6th, and 7th compared to the major scale. The scale is the same ascending as descending.</p>
         <h3>Harmonic Minor</h3>
         <HarmonicMinorScale />
         <p>In a harmonic minor scale, the 3rd note and 6th notes are lowered, and the 7th note (otherwise known as a leading note) is raised compared to the natural minor. The pattern for this using semitones and tones are T-ST-T-T-ST-T+ST-ST. The scale is the same ascending as descending.</p>
