@@ -1,10 +1,10 @@
-import MajArpeggio from '../../components/arpeggios/Maj_Arpeggio.jsx';
-import MinArpeggio from '../../components/arpeggios/Min_Arpeggio.jsx';
+import MajArpeggio from '../../components/arpeggios/MajorArpeggio.jsx';
+import MinArpeggio from '../../components/arpeggios/MinorArpeggio.jsx';
 import Dom7th from '../../components/arpeggios/Dom7th.jsx';
 import Dim7th from '../../components/arpeggios/Dim7th.jsx';
-import './Arpeggios_7ths.css';
+import './Arpeggios7ths.css';
 
-export default function Arpeggios_7ths() {
+export default function Arpeggios7ths() {
     return (
       <div className="arpeggios">
         <h1>Arpeggios and 7th Chords</h1>

@@ -1,7 +1,7 @@
 
 # music-theory-app
 
-**music-theory-app** is an interactive web application designed to help users learn and explore music theory concepts visually and intuitively. Whether you're a beginner or an advanced musician, this app provides clear explanations, interactive diagrams, and accurate music notation to make learning music theory engaging and accessible. Built with modern web technologies, it offers a seamless and responsive experience across devices.
+This is an interactive web application designed to help users learn and explore music theory concepts visually and intuitively. Whether you're a beginner or an advanced musician, this app provides clear explanations, interactive diagrams, and accurate music notation to make learning music theory engaging and accessible. Built with modern web technologies, it offers a seamless and responsive experience across devices.
 
 ## Live Demo
 
