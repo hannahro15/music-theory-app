@@ -14,15 +14,19 @@ export default function Navbar() {
             <Nav.Link as={NavLink} to="/">Home</Nav.Link>
 
             <NavDropdown title="Theory" id="theory-dropdown">
+              <NavDropdown.Item as={NavLink} to="/theory">All Theory Topics</NavDropdown.Item>
+              <NavDropdown.Divider />
               <NavDropdown.Item as={NavLink} to="/scales">Scales</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} to="/arpeggios">Arpeggios and 7th Chords</NavDropdown.Item>
               <NavDropdown.Item href="#circle-of-fifths">Circle of Fifths</NavDropdown.Item>
               <NavDropdown.Item href="#key-signatures">Key Signatures</NavDropdown.Item>
-              <NavDropdown.Item  as={NavLink} to="/intervals">Intervals</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/intervals">Intervals</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} to="/musical-glossary">Musical Glossary</NavDropdown.Item>
             </NavDropdown>
                 
             <NavDropdown title="Activities" id="quizzes-dropdown">
+              <NavDropdown.Item as={NavLink} to="/activities">All Activities</NavDropdown.Item>
+              <NavDropdown.Divider />
               <NavDropdown.Item as={NavLink} to="/ear-training">Ear training</NavDropdown.Item>
               <NavDropdown.Item href="#notation">Notation</NavDropdown.Item>
               <NavDropdown.Item href="#intervals">Intervals</NavDropdown.Item>
@@ -33,6 +37,8 @@ export default function Navbar() {
             </NavDropdown>
 
             <NavDropdown title="Instrument" id="instrument-dropdown">
+              <NavDropdown.Item as={NavLink} to="/instrument">All Instruments</NavDropdown.Item>
+              <NavDropdown.Divider />
               <Dropdown drop="end" as="div" className="dropdown-submenu">
                 <Dropdown.Toggle as="a" className="dropdown-item">Violin</Dropdown.Toggle>
                 <Dropdown.Menu>

@@ -10,7 +10,7 @@ import Maj6th from '../../components/intervals/Maj6th.jsx';
 import Min7th from '../../components/intervals/Min7th.jsx';
 import Maj7th from '../../components/intervals/Maj7th.jsx';
 import Octave from '../../components/intervals/Octave.jsx';
-import './intervals.css';
+import './Intervals.css';
 
 export default function Intervals() {
   return (
