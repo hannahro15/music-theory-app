@@ -1,7 +1,7 @@
 import MajorScale from '../../components/scales/MajorScale';
 import HarmonicMinorScale from '../../components/scales/HarmonicMinorScale';
 import MelodicMinorScale from '../../components/scales/MelodicMinorScale';
-import './scales.css';
+import './Scales.css';
 
 export default function Scales() {
   return (
