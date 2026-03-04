@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Factory } from 'vexflow';
 
-export default function Min3rd() {
+export default function Maj3rd() {
        useEffect(() => {
           const container = document.getElementById('maj-3rd-interval');
           if (!container) return;
