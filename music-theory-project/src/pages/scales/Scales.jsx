@@ -1,7 +1,8 @@
 import MajorScale from '../../components/scales/MajorScale';
 import HarmonicMinorScale from '../../components/scales/HarmonicMinorScale';
 import MelodicMinorScale from '../../components/scales/MelodicMinorScale';
-import './scales.css';
+import DorianScale from '../../components/scales/DorianScale';
+import './Scales.css';
 
 export default function Scales() {
   return (
@@ -21,6 +22,13 @@ export default function Scales() {
         <h3>Melodic Minor</h3>
         <MelodicMinorScale />
         <p> The melodic minor scale ascends with both the 6th and 7th notes raised compared to the natural minor. When descending, it goes back to the natural minor form, with the 6th and 7th notes lowered.</p>
+      </div>
+      <div className="modes-container">
+        <h3>Modes</h3>
+        <p>Modes are derived from the major scale by starting on different degrees of the scale. Each mode has its own unique sound and characteristics. The seven modes are:</p>
+        <h4>Dorian Mode in C</h4>
+        <DorianScale />
+        <p>The Dorian mode has a minor quality with a raised 6th note. It has a jazzy and bluesy sound.</p>
       </div>
     </div>
   );
