@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Factory } from 'vexflow';
 
-export default function DorianScale() {
+export default function PhrygianScale() {
   useEffect(() => {
     const container = document.getElementById('c-phrygian-scale');
     if (!container) return;
