@@ -2,6 +2,7 @@ import MajorScale from '../../components/scales/MajorScale';
 import HarmonicMinorScale from '../../components/scales/HarmonicMinorScale';
 import MelodicMinorScale from '../../components/scales/MelodicMinorScale';
 import DorianScale from '../../components/scales/DorianScale';
+import PhrygianScale from '../../components/scales/PhrygianScale';
 import './Scales.css';
 
 export default function Scales() {
@@ -29,6 +30,9 @@ export default function Scales() {
         <h4>Dorian Mode in C</h4>
         <DorianScale />
         <p>The Dorian mode has a minor quality with a raised 6th note. It has a jazzy and bluesy sound.</p>
+        <h4>Phrygian Mode in C</h4>
+        <PhrygianScale />
+        <p>The Phrygian mode has a minor quality with a lowered 2nd note. It has a Spanish or Middle Eastern sound.</p>
       </div>
     </div>
   );
