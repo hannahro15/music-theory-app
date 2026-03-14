@@ -22,7 +22,7 @@ export default function PhrygianScale() {
     system.addStave({
       voices: [
         score.voice(
-          score.notes('C4/q, Db4/q, Eb4/q, F4/q, G4/q, A4/q, Bb4/q, C5/q, Bb4/q, A4/q, G4/q, F4/q, Eb4/q, Db4/q, C4/q'),
+          score.notes('C4/q, Db4/q, Eb4/q, F4/q, G4/q, Ab4/q, Bb4/q, C5/q, Bb4/q, Ab4/q, G4/q, F4/q, Eb4/q, Db4/q, C4/q'),
           { time: '15/4' }
         ),
       ],
