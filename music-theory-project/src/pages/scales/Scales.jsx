@@ -3,6 +3,7 @@ import HarmonicMinorScale from '../../components/scales/HarmonicMinorScale';
 import MelodicMinorScale from '../../components/scales/MelodicMinorScale';
 import DorianScale from '../../components/scales/DorianScale';
 import PhrygianScale from '../../components/scales/PhrygianScale';
+import LydianScale from '../../components/scales/LydianScale';
 import './Scales.css';
 
 export default function Scales() {
@@ -26,13 +27,16 @@ export default function Scales() {
       </div>
       <div className="modes-container">
         <h3>Modes</h3>
-        <p>Modes are derived from the major scale by starting on different degrees of the scale. Each mode has its own unique sound and characteristics. The seven modes are:</p>
+        <p>Modes are derived from the major scale by starting on different degrees of the scale. Each mode has its own unique sound and characteristics.</p>
         <h4>Dorian Mode in C</h4>
         <DorianScale />
         <p>The Dorian mode has a minor quality with a raised 6th note. It has a jazzy and bluesy sound.</p>
         <h4>Phrygian Mode in C</h4>
         <PhrygianScale />
         <p>The Phrygian mode has a minor quality with a lowered 2nd note. It has a Spanish or Middle Eastern sound.</p>
+        <h4>Lydian Mode in C</h4>
+        <LydianScale />
+        <p>The Lydian mode has a major quality with a raised 4th note. It has a dreamy and ethereal sound.</p>
       </div>
     </div>
   );
