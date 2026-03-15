@@ -4,7 +4,7 @@ import MelodicMinorScale from '../../components/scales/MelodicMinorScale';
 import DorianScale from '../../components/scales/DorianScale';
 import PhrygianScale from '../../components/scales/PhrygianScale';
 import LydianScale from '../../components/scales/LydianScale';
-import MixolydianScale from '../../components/scales/MixolydianScales';
+import MixolydianScale from '../../components/scales/MixolydianScale';
 import './Scales.css';
 
 export default function Scales() {
