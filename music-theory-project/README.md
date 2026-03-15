@@ -21,7 +21,7 @@ This project is configured to deploy automatically to GitHub Pages using GitHub 
 2. Go to **Settings → Pages**.
 3. Set **Source** to **GitHub Actions**.
 
-Workflow file: `.github/workflows/deploy.yml`
+Workflow file: `../.github/workflows/deploy.yml`
 
 ### Deployment troubleshooting
 
