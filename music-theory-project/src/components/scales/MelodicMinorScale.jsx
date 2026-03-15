@@ -22,7 +22,7 @@ export default function MelodicMinorScale() {
     system.addStave({
       voices: [
         score.voice(
-          score.notes('C4/w, D4/w, Eb4/w, F4/w, G4/w, A4/w, B4/w, C5/w, Bb4/w, Ab4/w, G4/w, F4/w, Eb4/w, D4/w, C4/w'),
+          score.notes('C4/q, D4/q, Eb4/q, F4/q, G4/q, A4/q, B4/q, C5/q, Bb4/q, Ab4/q, G4/q, F4/q, Eb4/q, D4/q, C4/q'),
           { time: '15/4' }
         ),
       ],
