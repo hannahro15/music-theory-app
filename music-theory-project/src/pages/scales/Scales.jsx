@@ -4,6 +4,7 @@ import MelodicMinorScale from '../../components/scales/MelodicMinorScale';
 import DorianScale from '../../components/scales/DorianScale';
 import PhrygianScale from '../../components/scales/PhrygianScale';
 import LydianScale from '../../components/scales/LydianScale';
+import MixolydianScale from '../../components/scales/MixolydianScales';
 import './Scales.css';
 
 export default function Scales() {
@@ -37,6 +38,9 @@ export default function Scales() {
         <h4>Lydian Mode in C</h4>
         <LydianScale />
         <p>The Lydian mode has a major quality with a raised 4th note. It has a dreamy and ethereal sound.</p>
+        <h4>Mixolydian Mode in C</h4>
+        <MixolydianScale />
+        <p>The Mixolydian mode has a major quality with a lowered 7th note. It has a bluesy and rock sound.</p>
       </div>
     </div>
   );
