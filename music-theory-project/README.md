@@ -7,29 +7,32 @@ This is an interactive web application designed to help users learn and explore 
 
 🔗 [https://hannahro15.github.io/music-theory-app/](https://hannahro15.github.io/music-theory-app/)
 
-## Automatic Deployment
+## Deployment
 
-This project is configured to deploy automatically to GitHub Pages using GitHub Actions.
+This project is deployed to GitHub Pages using the `gh-pages` npm script.
 
-- Every push to the `main` branch triggers a production build and deploy.
-- You can also run the workflow manually from the **Actions** tab.
-- Legacy manual deployment via `gh-pages` npm scripts has been removed.
+### Deploy command
+
+From `music-theory-project`, run:
+
+```bash
+npm run deploy
+```
+
+This runs `npm run build` and publishes `dist/` to the `gh-pages` branch.
 
 ### One-time GitHub setup
 
 1. Open your repository on GitHub.
 2. Go to **Settings → Pages**.
-3. Set **Source** to **GitHub Actions**.
-
-Workflow file: `../.github/workflows/deploy.yml`
+3. Set **Source** to **Deploy from a branch**.
+4. Select branch **gh-pages** and folder **/(root)**.
 
 ### Deployment troubleshooting
 
-- Confirm the push was to the `main` branch.
-- Check **Actions** for the latest workflow run and open the failed step logs.
-- Verify **Settings → Pages** is set to **GitHub Actions** (not branch deploy).
-- Ensure Actions are enabled for the repository in **Settings → Actions**.
-- If build fails locally, run `npm ci` then `npm run build` and fix reported errors.
+- Confirm the `gh-pages` branch exists and was updated after deploy.
+- If the site looks stale, do a hard refresh (`Cmd+Shift+R`) or open in an incognito window.
+- If deploy fails locally, run `npm ci` then `npm run build` and fix reported errors.
 
 ## Features
 
