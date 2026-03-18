@@ -32,6 +32,7 @@ export default function Scales() {
         <h3>Modes</h3>
         <p>Modes are derived from the major scale by starting on different degrees of the scale. Each mode has its own unique sound and characteristics.</p>
         <h4>Ionian Mode in C</h4>
+        <MajorScale />
         <p>The Ionian mode is the same as the major scale. It has a bright and happy sound.</p>
         <h4>Dorian Mode in C</h4>
         <DorianScale />
