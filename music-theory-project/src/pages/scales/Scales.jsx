@@ -6,6 +6,7 @@ import PhrygianScale from '../../components/scales/PhrygianScale';
 import LydianScale from '../../components/scales/LydianScale';
 import MixolydianScale from '../../components/scales/MixolydianScale';
 import AeolianScale from '../../components/scales/AeolianScale';
+import LocrianScale from '../../components/scales/LocrianScale';
 import './Scales.css';
 
 export default function Scales() {
@@ -30,6 +31,8 @@ export default function Scales() {
       <div className="modes-container">
         <h3>Modes</h3>
         <p>Modes are derived from the major scale by starting on different degrees of the scale. Each mode has its own unique sound and characteristics.</p>
+        <h4>Ionian Mode in C</h4>
+        <p>The Ionian mode is the same as the major scale. It has a bright and happy sound.</p>
         <h4>Dorian Mode in C</h4>
         <DorianScale />
         <p>The Dorian mode has a minor quality with a raised 6th note. It has a jazzy and bluesy sound.</p>
@@ -45,6 +48,9 @@ export default function Scales() {
         <h4>Aeolian Mode in C</h4>
         <AeolianScale />
         <p>The Aeolian mode is the natural minor scale. It has a sad and melancholic sound.</p>
+        <h4>Locrian Mode in C</h4>
+        <LocrianScale />
+        <p>The Locrian mode has a diminished quality with a lowered 2nd and 5th note. It has a dissonant and unstable sound.</p>
       </div>
     </div>
   );
