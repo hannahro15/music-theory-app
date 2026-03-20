@@ -14,21 +14,21 @@ export default function Navbar() {
             <Nav.Link as={NavLink} to="/">Home</Nav.Link>
 
             <NavDropdown title="Theory" id="theory-dropdown">
-              <NavDropdown.Item as={NavLink} to="/scales">Scales</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/arpeggios">Arpeggios and 7th Chords</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/theory/scales">Scales</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/theory/arpeggios">Arpeggios and 7th Chords</NavDropdown.Item>
               <NavDropdown.Item href="#circle-of-fifths">Circle of Fifths</NavDropdown.Item>
               <NavDropdown.Item href="#key-signatures">Key Signatures</NavDropdown.Item>
-              <NavDropdown.Item  as={NavLink} to="/intervals">Intervals</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/musical-glossary">Musical Glossary</NavDropdown.Item>
+              <NavDropdown.Item  as={NavLink} to="/theory/intervals">Intervals</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/theory/musical-glossary">Musical Glossary</NavDropdown.Item>
             </NavDropdown>
                 
             <NavDropdown title="Activities" id="quizzes-dropdown">
-              <NavDropdown.Item as={NavLink} to="/ear-training">Ear training</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/activities/ear-training">Ear training</NavDropdown.Item>
               <NavDropdown.Item href="#notation">Notation</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/intervals">Intervals</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/theory/intervals">Intervals</NavDropdown.Item>
               <NavDropdown.Item href="#chords">Chords</NavDropdown.Item>
               <NavDropdown.Item href="#rhythm">Rhythm</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/scales">Scales</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/theory/scales">Scales</NavDropdown.Item>
               <NavDropdown.Item href="#scales-quiz">Classical Music Quiz</NavDropdown.Item>
             </NavDropdown>
 
