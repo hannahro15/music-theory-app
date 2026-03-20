@@ -25,10 +25,10 @@ export default function Navbar() {
             <NavDropdown title="Activities" id="quizzes-dropdown">
               <NavDropdown.Item as={NavLink} to="/activities/ear-training">Ear training</NavDropdown.Item>
               <NavDropdown.Item href="#notation">Notation</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/theory/intervals">Intervals</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/activities/intervals">Intervals</NavDropdown.Item>
               <NavDropdown.Item href="#chords">Chords</NavDropdown.Item>
               <NavDropdown.Item href="#rhythm">Rhythm</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/theory/scales">Scales</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/activities/scales">Scales</NavDropdown.Item>
               <NavDropdown.Item href="#scales-quiz">Classical Music Quiz</NavDropdown.Item>
             </NavDropdown>
 
