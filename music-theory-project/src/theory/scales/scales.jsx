@@ -1,6 +1,7 @@
 import MajorScale from '../../components/scales/MajorScale';
 import HarmonicMinorScale from '../../components/scales/HarmonicMinorScale';
 import MelodicMinorScale from '../../components/scales/MelodicMinorScale';
+import WholeToneScale from '../../components/scales/WholeToneScale';
 import DorianScale from '../../components/scales/DorianScale';
 import PhrygianScale from '../../components/scales/PhrygianScale';
 import LydianScale from '../../components/scales/LydianScale';
@@ -29,10 +30,13 @@ export default function Scales() {
         <MelodicMinorScale />
         <p> The melodic minor scale ascends with both the 6th and 7th notes raised compared to the natural minor. When descending, it goes back to the natural minor form, with the 6th and 7th notes lowered.</p>
       </div>
-      <div className="scales-container">
+      <div className="scale-container">
         <h3>Chromatic Scale</h3>
         <ChromaticScale />
         <p>The chromatic scale consists of all 12 notes in an octave. It has a very dissonant and tense sound.</p>
+        <h3>Whole Tone Scale</h3>
+        <WholeToneScale />
+        <p>The whole tone scale consists of six notes, each a whole step apart. It has a dreamy and ambiguous sound.</p>
       </div>
       <div className="modes-container">
         <h3>Modes</h3>
