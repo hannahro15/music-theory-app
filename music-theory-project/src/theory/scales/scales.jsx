@@ -9,6 +9,7 @@ import MixolydianScale from '../../components/scales/MixolydianScale';
 import AeolianScale from '../../components/scales/AeolianScale';
 import LocrianScale from '../../components/scales/LocrianScale';
 import ChromaticScale from '../../components/scales/ChromaticScale';
+import PentatonicScale from '../../components/scales/PentatonicScale';
 import './Scales.css';
 
 export default function Scales() {
@@ -37,6 +38,9 @@ export default function Scales() {
         <h3>Whole Tone Scale</h3>
         <WholeToneScale />
         <p>The whole tone scale consists of six notes, each a whole step apart. It has a dreamy and ambiguous sound.</p>
+        <h3>Pentatonic Scale</h3>
+        <PentatonicScale />
+        <p>The pentatonic scale consists of five notes per octave. It has a very open and consonant sound, and is commonly used in folk music and blues.</p>
       </div>
       <div className="modes-container">
         <h3>Modes</h3>
