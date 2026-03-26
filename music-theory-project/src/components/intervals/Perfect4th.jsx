@@ -11,7 +11,7 @@ export default function Perfect4th() {
           const vf = new Factory({
             renderer: {
               elementId: 'perfect-4th-interval',
-              width: 700,
+              width: Math.min(container.clientWidth || 700, 320),
               height: 150,
             },
           });

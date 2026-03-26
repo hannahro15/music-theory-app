@@ -11,7 +11,7 @@ export default function Maj7th() {
           const vf = new Factory({
             renderer: {
               elementId: 'maj-7th-interval',
-              width: 700,
+              width: Math.min(container.clientWidth || 700, 320),
               height: 150,
             },
           });

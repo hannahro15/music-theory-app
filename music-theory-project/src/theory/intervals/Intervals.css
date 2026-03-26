@@ -1,9 +1,82 @@
+.intervals-page {
+  padding: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intervals-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .interval-div {
-    margin: 20px;
-    padding: 10px;
-    border: solid 1px #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    width: fit-content;
-    height: fit-content;
+  padding: 12px;
+  margin: 20px;
+  max-width: 100%;
+  border: 2px solid black;
+  border-radius: 14px;
+  background: transparent;
+}
+
+.interval-div h2 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.interval-div p {
+  margin: 10px 0 0;
+  line-height: 1.45;
+}
+
+.interval-notation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  margin: 6px 0;
+}
+
+.interval-notation > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.interval-notation svg,
+.interval-notation canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 481px) {
+  .intervals-page {
+    padding: 20px;
+  }
+
+  .intervals-flex {
+    gap: 16px;
+  }
+
+  .interval-div {
+    padding: 16px;
+  }
+}
+
+@media (min-width: 769px) {
+  .intervals-flex {
+    gap: 20px;
+  }
+
+  .interval-div {
+    padding: 20px;
+  }
 }

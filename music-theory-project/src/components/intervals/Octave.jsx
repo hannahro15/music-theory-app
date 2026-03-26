@@ -11,7 +11,7 @@ export default function Octave() {
           const vf = new Factory({
             renderer: {
               elementId: 'octave-interval',
-              width: 700,
+              width: Math.min(container.clientWidth || 700, 320),
               height: 150,
             },
           });

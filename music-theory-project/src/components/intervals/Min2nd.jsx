@@ -11,7 +11,7 @@ export default function Min2nd() {
           const vf = new Factory({
             renderer: {
               elementId: 'min-2nd-interval',
-              width: 700,
+              width: Math.min(container.clientWidth || 700, 320),
               height: 150,
             },
           });
