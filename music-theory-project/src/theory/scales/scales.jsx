@@ -14,7 +14,7 @@ import './Scales.css';
 
 export default function Scales() {
   return (
-    <div className="scales" style={{ padding: '2rem' }}>
+    <div className="scales">
       <h1>Scales</h1>
       <p>Learn about different musical scales. Here is an example of C major, C harmonic minor and C melodic minor scales below.</p>
       <div className="scale-container">

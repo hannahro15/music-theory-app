@@ -1,31 +1,103 @@
 .scales {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    padding: 20px;
+    gap: 12px;
+    padding: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
 }
 
-.scale-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    border-radius: 14px;
-    padding: 20px 24px;
-    width: 100%;
-    max-width: 540px;
-    margin: 0 auto 24px auto;
-    border: 2px solid black;
-    background: none;
-    box-shadow: none;
+.scales > h1 {
+    margin-bottom: 8px;
 }
 
-/* Ensure VexFlow scale renderings stay inside the box */
-.scale-container > div[id^="c-"] {
+.scales > p {
+    margin: 0 auto;
+    max-width: 820px;
+}
+
+.scale-container,
+.modes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 14px;
+    padding: 12px;
     width: 100%;
-    overflow-x: auto;
+    max-width: 820px;
+    margin: 16px auto 0;
+    border: 2px solid black;
+    background: transparent;
+}
+
+.scale-container h2,
+.scale-container h3,
+.modes-container h3,
+.modes-container h4 {
+    margin: 0 0 8px;
+    font-weight: 700;
+}
+
+.scale-container h2,
+.modes-container h3 {
+    font-size: 1.2rem;
+}
+
+.scale-container h3,
+.modes-container h4 {
+    font-size: 1.08rem;
+}
+
+.scale-container p,
+.modes-container p {
+    margin: 10px 0 0;
+    line-height: 1.45;
+}
+
+.scale-container > div[id^="c-"],
+.modes-container > div[id^="c-"] {
+    width: 100%;
     display: flex;
     justify-content: center;
+    overflow-x: auto;
+    margin: 6px 0;
+}
+
+.scale-container > div[id^="c-"] > div,
+.modes-container > div[id^="c-"] > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.scale-container > div[id^="c-"] svg,
+.scale-container > div[id^="c-"] canvas,
+.modes-container > div[id^="c-"] svg,
+.modes-container > div[id^="c-"] canvas {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+@media (min-width: 481px) {
+    .scales {
+        padding: 20px;
+    }
+
+    .scale-container,
+    .modes-container {
+        padding: 16px;
+        gap: 16px;
+    }
+}
+
+@media (min-width: 769px) {
+    .scale-container,
+    .modes-container {
+        padding: 20px;
+        gap: 20px;
+    }
 }

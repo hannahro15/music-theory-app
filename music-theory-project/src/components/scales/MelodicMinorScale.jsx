@@ -7,17 +7,18 @@ export default function MelodicMinorScale() {
     if (!container) return;
     
     container.innerHTML = '';
+    const rendererWidth = Math.max(720, Math.min(container.clientWidth || 1400, 1100));
     
     const vf = new Factory({
       renderer: {
         elementId: 'c-melodic-minor-scale',
-        width: 1400,
+        width: rendererWidth,
         height: 200, 
       },
     });
 
     const score = vf.EasyScore();
-    const system = vf.System({ wudtg: 1300 });
+    const system = vf.System({ width: rendererWidth - 40 });
 
     system.addStave({
       voices: [
