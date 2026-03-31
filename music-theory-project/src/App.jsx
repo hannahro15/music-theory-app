@@ -25,7 +25,7 @@ export default function App() {
         <Route path="/activities/chords" element={<h1>Chords Quiz</h1>} />
         <Route path="/activities/rhythm" element={<h1>Rhythm Game</h1>} />
         <Route path="/activities/scales" element={<h1>Scales Flashcards Game</h1>} />
-        <Route path="/activities/classical-music-quiz" element={<h1>Classical Music Quiz</h1>} />
+        <Route path="/activities/classical-music-quiz" element={<Quiz />} />
         <Route path="/instrument/violin/fingerings" element={<h1>Violin Fingerings</h1>} />
         <Route path="/instrument/violin/technique" element={<h1>Violin Technique</h1>} />
         <Route path="/instrument/violin/excerpts" element={<h1>Violin Excerpts</h1>} />
