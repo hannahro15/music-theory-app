@@ -9,17 +9,20 @@ This is an interactive web application designed to help users learn and explore 
 
 ## Deployment
 
-This project is deployed to GitHub Pages using the `gh-pages` npm script.
+
+## Deployment
+
+This project is deployed to GitHub Pages using the `gh-pages` npm script. GitHub Actions workflow files have been removed; deployment is now manual only.
 
 ### Deploy command
 
-From `music-theory-project`, run:
+From the `music-theory-project` directory, run:
 
 ```bash
 npm run deploy
 ```
 
-This runs `npm run build` and publishes `dist/` to the `gh-pages` branch.
+This will build the project and publish the `dist/` folder to the `gh-pages` branch.
 
 ### One-time GitHub setup
 
@@ -33,6 +36,10 @@ This runs `npm run build` and publishes `dist/` to the `gh-pages` branch.
 - Confirm the `gh-pages` branch exists and was updated after deploy.
 - If the site looks stale, do a hard refresh (`Cmd+Shift+R`) or open in an incognito window.
 - If deploy fails locally, run `npm ci` then `npm run build` and fix reported errors.
+
+### Note
+
+There is no longer any automatic deployment via GitHub Actions. All deployments must be triggered manually using `npm run deploy` from your local machine.
 
 ## Features
 
