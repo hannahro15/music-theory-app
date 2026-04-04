@@ -5,7 +5,8 @@ import Scales from './theory/scales/Scales.jsx'
 import Home from './pages/home/Home.jsx'
 import Intervals from './theory/intervals/Intervals.jsx'
 import Arpeggios7ths from './theory/arpeggios/Arpeggios7ths.jsx'
-import MusicalGlossary from './theory/MusicalGlossary.jsx'
+
+import Quiz from './activities/quiz/Quiz.jsx'
 
 export default function App() {
   return (
