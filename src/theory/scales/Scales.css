@@ -1,10 +1,7 @@
 .scales {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 16px;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
+    padding: 24px 16px 48px;
     text-align: center;
 }
 
@@ -17,46 +14,59 @@
     max-width: 820px;
 }
 
-.scale-container,
-.modes-container {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    border-radius: 14px;
-    padding: 12px;
-    width: 100%;
-    max-width: 820px;
-    margin: 16px auto 0;
-    border: 2px solid black;
-    background: transparent;
+.scales-section {
+    margin-top: 36px;
 }
 
-.scale-container h2,
-.scale-container h3,
-.modes-container h3,
-.modes-container h4 {
-    margin: 0 0 8px;
+.scales-section h2 {
+    margin-bottom: 20px;
+}
+
+.scales-section > p {
+    margin: 0 auto 20px;
+    max-width: 820px;
+}
+
+.scales-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.scales-grid--single {
+    max-width: 640px;
+}
+
+.scale-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 20px 24px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+.scale-card:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.scale-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.1rem;
     font-weight: 700;
 }
 
-.scale-container h2,
-.modes-container h3 {
-    font-size: 1.2rem;
-}
-
-.scale-container h3,
-.modes-container h4 {
-    font-size: 1.08rem;
-}
-
-.scale-container p,
-.modes-container p {
+.scale-card p {
+    color: #333;
+    line-height: 1.5;
     margin: 10px 0 0;
-    line-height: 1.45;
 }
 
-.scale-container > .vf-notation,
-.modes-container > .vf-notation {
+.scale-card .vf-notation {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -64,40 +74,15 @@
     margin: 6px 0;
 }
 
-.scale-container > .vf-notation > div,
-.modes-container > .vf-notation > div {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 100%;
-}
-
-.scale-container > .vf-notation svg,
-.scale-container > .vf-notation canvas,
-.modes-container > .vf-notation svg,
-.modes-container > .vf-notation canvas {
+.scale-card .vf-notation svg,
+.scale-card .vf-notation canvas {
     display: block;
     margin: 0 auto;
     max-width: 100%;
 }
 
-@media (min-width: 481px) {
-    .scales {
-        padding: 20px;
-    }
-
-    .scale-container,
-    .modes-container {
-        padding: 16px;
-        gap: 16px;
-    }
-}
-
 @media (min-width: 769px) {
-    .scale-container,
-    .modes-container {
-        padding: 20px;
-        gap: 20px;
+    .scale-card {
+        padding: 24px 28px;
     }
 }
