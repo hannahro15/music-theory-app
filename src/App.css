@@ -3,3 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.app-main {
+    flex: 1;
+}
