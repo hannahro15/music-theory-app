@@ -1,16 +1,16 @@
 import { useEffect } from 'react';
 import { Factory } from 'vexflow';
 
-export default function MajorScale(){
+export default function MajorScale({ id = 'c-major-scale' }){
   useEffect(() => {
-    const container = document.getElementById('c-major-scale');
+    const container = document.getElementById(id);
     if (!container) return;
-    
+
     container.innerHTML = '';
-    
+
     const vf = new Factory({
       renderer: {
-        elementId: 'c-major-scale',
+        elementId: id,
         width: 700,
         height: 150,
       },
@@ -29,7 +29,7 @@ export default function MajorScale(){
     }).addClef('treble');
 
     vf.draw();
-  }, []);
+  }, [id]);
 
-    return <div id="c-major-scale" />;
+    return <div id={id} />;
 }
