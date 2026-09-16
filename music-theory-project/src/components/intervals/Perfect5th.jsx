@@ -1,34 +1,6 @@
-import { useEffect } from 'react';
-import { Factory } from 'vexflow';
+import Notation from '../notation/Notation';
+import { responsiveIntervalWidth } from '../../hooks/useVexFlowStave';
 
 export default function Perfect5th() {
-       useEffect(() => {
-          const container = document.getElementById('perfect-5th-interval');
-          if (!container) return;
-          
-          container.innerHTML = '';
-          
-          const vf = new Factory({
-            renderer: {
-              elementId: 'perfect-5th-interval',
-              width: Math.min(container.clientWidth || 700, 320),
-              height: 150,
-            },
-          });
-          const score = vf.EasyScore();
-          const system = vf.System();
-      
-          system.addStave({
-            voices: [
-              score.voice(
-                score.notes('C4/q, G4/q', {stem: 'up'}), 
-                { time: '2/4'}
-              ),
-            ],
-          }).addClef('treble');
-      
-          vf.draw();
-       }, []);
-
-       return <div id="perfect-5th-interval" />
-  }
+  return <Notation notes="C4/q, G4/q" time="2/4" stem="up" width={responsiveIntervalWidth} />;
+}
