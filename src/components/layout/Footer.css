@@ -1,0 +1,25 @@
+.site-footer {
+  background: #212529;
+  color: #adb5bd;
+  margin-top: 48px;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+.site-footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.site-footer a {
+  color: #adb5bd;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
