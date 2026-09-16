@@ -9,14 +9,11 @@ This is an interactive web application designed to help users learn and explore 
 
 ## Deployment
 
-
-## Deployment
-
 This project is deployed to GitHub Pages using the `gh-pages` npm script. GitHub Actions workflow files have been removed; deployment is now manual only.
 
 ### Deploy command
 
-From the `music-theory-project` directory, run:
+From the repository root, run:
 
 ```bash
 npm run deploy
@@ -59,7 +56,7 @@ There is no longer any automatic deployment via GitHub Actions. All deployments 
 1. Clone the repository:
 	```bash
 	git clone https://github.com/hannahro15/music-theory-app.git
-	cd music-theory-app/music-theory-project
+	cd music-theory-app
 	```
 2. Install dependencies:
 	```bash
