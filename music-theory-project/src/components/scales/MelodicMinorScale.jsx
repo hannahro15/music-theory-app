@@ -1,36 +1,17 @@
-import { useEffect } from 'react';
-import { Factory } from 'vexflow';
+import Notation from '../notation/Notation';
+
+function responsiveWidth(container) {
+  return Math.max(720, Math.min(container.clientWidth || 1400, 1100));
+}
 
 export default function MelodicMinorScale() {
-  useEffect(() => {
-    const container = document.getElementById('c-melodic-minor-scale');
-    if (!container) return;
-    
-    container.innerHTML = '';
-    const rendererWidth = Math.max(720, Math.min(container.clientWidth || 1400, 1100));
-    
-    const vf = new Factory({
-      renderer: {
-        elementId: 'c-melodic-minor-scale',
-        width: rendererWidth,
-        height: 200, 
-      },
-    });
-
-    const score = vf.EasyScore();
-    const system = vf.System({ width: rendererWidth - 40 });
-
-    system.addStave({
-      voices: [
-        score.voice(
-          score.notes('C4/q, D4/q, Eb4/q, F4/q, G4/q, A4/q, B4/q, C5/q, Bb4/q, Ab4/q, G4/q, F4/q, Eb4/q, D4/q, C4/q'),
-          { time: '15/4' }
-        ),
-      ],
-    }).addClef('treble');
-
-    vf.draw();
-  }, []);
-
-    return <div id="c-melodic-minor-scale" />;
-  }
+  return (
+    <Notation
+      notes="C4/q, D4/q, Eb4/q, F4/q, G4/q, A4/q, B4/q, C5/q, Bb4/q, Ab4/q, G4/q, F4/q, Eb4/q, D4/q, C4/q"
+      time="15/4"
+      width={responsiveWidth}
+      height={200}
+      systemWidthOffset={40}
+    />
+  );
+}

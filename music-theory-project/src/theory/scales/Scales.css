@@ -55,8 +55,8 @@
     line-height: 1.45;
 }
 
-.scale-container > div[id^="c-"],
-.modes-container > div[id^="c-"] {
+.scale-container > .vf-notation,
+.modes-container > .vf-notation {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -64,8 +64,8 @@
     margin: 6px 0;
 }
 
-.scale-container > div[id^="c-"] > div,
-.modes-container > div[id^="c-"] > div {
+.scale-container > .vf-notation > div,
+.modes-container > .vf-notation > div {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -73,10 +73,10 @@
     max-width: 100%;
 }
 
-.scale-container > div[id^="c-"] svg,
-.scale-container > div[id^="c-"] canvas,
-.modes-container > div[id^="c-"] svg,
-.modes-container > div[id^="c-"] canvas {
+.scale-container > .vf-notation svg,
+.scale-container > .vf-notation canvas,
+.modes-container > .vf-notation svg,
+.modes-container > .vf-notation canvas {
     display: block;
     margin: 0 auto;
     max-width: 100%;
