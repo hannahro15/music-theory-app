@@ -1,0 +1,368 @@
+/* Classical Music Quiz styling */
+.quiz-page {
+  font-family: 'Georgia', serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url('./background-img.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.quiz-page h1 {
+  text-align: center;
+  color: white;
+}
+
+.quiz-page .quiz-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20%;
+}
+
+.quiz-page #start-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Answer options in 2x2 grid */
+.quiz-page #answerOptions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.quiz-page .option-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quiz-page .option-label {
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.quiz-page #answerOptions button {
+  flex: 1;
+  padding: 15px 20px;
+  text-align: left;
+  background-color: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.quiz-page #answerOptions button:hover {
+  background-color: #e3f2fd;
+  border-color: #3498db;
+  transform: scale(1.02);
+}
+
+/* Answer feedback styles */
+.quiz-page .option-container.correct .option-label {
+  background-color: #28a745 !important;
+  color: white;
+  animation: correctPulse 0.6s ease-in-out;
+}
+
+.quiz-page .option-container.correct button {
+  background-color: #d4edda !important;
+  border: 3px solid #28a745 !important;
+  color: #155724 !important;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(40, 167, 69, 0.3);
+}
+
+.quiz-page .option-container.incorrect .option-label {
+  background-color: #dc3545 !important;
+  color: white;
+  animation: incorrectShake 0.6s ease-in-out;
+}
+
+.quiz-page .option-container.incorrect button {
+  background-color: #f8d7da !important;
+  border: 3px solid #dc3545 !important;
+  color: #721c24 !important;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(220, 53, 69, 0.3);
+}
+
+/* Animations for feedback */
+@keyframes correctPulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes incorrectShake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+.quiz-page .option-container.disabled button {
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+/* Additional feedback for non-selected options */
+.quiz-page .option-container.disabled:not(.correct):not(.incorrect) button {
+  background-color: #f8f9fa;
+  border-color: #dee2e6;
+  opacity: 0.6;
+}
+
+.quiz-page .option-container.disabled:not(.correct):not(.incorrect) .option-label {
+  background-color: #6c757d;
+  opacity: 0.6;
+}
+
+.quiz-page .start-screen {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Results screen styling */
+.quiz-page .results-screen {
+  text-align: center;
+  padding: 20px;
+}
+
+.quiz-page .results-screen h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.quiz-page .results-screen p {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #34495e;
+}
+
+.quiz-page #restart-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.quiz-page #restart-btn:hover {
+  background-color: #218838;
+}
+
+/* Responsive Design for Different Screen Sizes */
+
+/* Tablet styles (768px and below) */
+@media screen and (max-width: 768px) {
+  .quiz-page {
+    padding: 15px;
+    background-attachment: scroll;
+    /* Better performance on mobile */
+  }
+
+  .quiz-page .quiz-container {
+    padding: 20px;
+    margin-top: 15%;
+    padding-top: 30px;
+  }
+
+  .quiz-page h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .quiz-page h2 {
+    font-size: 1.4rem;
+  }
+
+  .quiz-page #answerOptions {
+    gap: 12px;
+  }
+
+  .quiz-page #answerOptions button {
+    padding: 12px 15px;
+    font-size: 15px;
+  }
+
+  .quiz-page .option-label {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile styles (480px and below) */
+@media screen and (max-width: 480px) {
+  .quiz-page {
+    padding: 10px;
+  }
+
+  .quiz-page .quiz-container {
+    padding: 15px;
+    margin-top: 8%;
+    border-radius: 8px;
+    padding-top: 25px;
+  }
+
+  .quiz-page h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .quiz-page h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  /* Stack answer options vertically on small screens */
+  .quiz-page #answerOptions {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 15px 0;
+  }
+
+  .quiz-page #answerOptions button {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .quiz-page .option-label {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+  }
+
+  .quiz-page #start-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .quiz-page .quiz-info p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+}
+
+/* Large mobile/small tablet (between 481px and 600px) */
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  .quiz-page #answerOptions {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .quiz-page .quiz-container {
+    margin-top: 10%;
+    padding-top: 25px;
+  }
+}
+
+/* Extra small screens (320px and below) */
+@media screen and (max-width: 320px) {
+  .quiz-page {
+    padding: 8px;
+  }
+
+  .quiz-page .quiz-container {
+    padding: 12px;
+    padding-top: 20px;
+  }
+
+  .quiz-page h1 {
+    font-size: 1.3rem;
+  }
+
+  .quiz-page h2 {
+    font-size: 1.1rem;
+  }
+
+  .quiz-page #answerOptions button {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .quiz-page .option-label {
+    width: 22px;
+    height: 22px;
+    font-size: 11px;
+  }
+}
+
+/* Landscape orientation adjustments */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .quiz-page {
+    padding: 10px;
+  }
+
+  .quiz-page .quiz-container {
+    margin-top: 2%;
+    padding: 15px;
+  }
+
+  .quiz-page h1 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+
+  .quiz-page h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+}
+
+/* High DPI displays */
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi) {
+
+  /* Ensure crisp rendering on high DPI screens */
+  .quiz-page .option-label {
+    font-weight: 600;
+  }
+}
