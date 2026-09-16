@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="site-footer">
       <Container className="site-footer-inner">
-        <span>&copy; {year} Music Theory</span>
+        <span>&copy; {year} Music Theory App</span>
         <a
           href="https://github.com/hannahro15/music-theory-app"
           target="_blank"

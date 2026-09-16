@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <RBNavbar bg="dark" variant="dark" expand="lg">
       <Container>
-        <RBNavbar.Brand as={NavLink} to="/">Music Theory</RBNavbar.Brand>
+        <RBNavbar.Brand as={NavLink} to="/">Music Theory App</RBNavbar.Brand>
         <RBNavbar.Toggle aria-controls="main-nav" />
         <RBNavbar.Collapse id="main-nav">
           <Nav className="me-auto">
