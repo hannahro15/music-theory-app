@@ -1,28 +1,74 @@
-/* Add border around each arpeggio */
-
-.arpeggio-notation {
-        margin: 20px auto;
-        padding: 10px;
-        background: none;
-        border: none;
-        width: 100%;
-        max-width: 600px;
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
+.arpeggios {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 16px 48px;
+    text-align: center;
 }
 
-.arpeggio-border {
-    border: 2px solid black;
+.arpeggios > h1 {
+    margin-bottom: 8px;
+}
+
+.arpeggio-section {
+    margin-top: 36px;
+}
+
+.arpeggio-section h2 {
+    margin-bottom: 20px;
+}
+
+.arpeggio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.arpeggio-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
     border-radius: 14px;
     padding: 20px 24px;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 540px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    text-align: center;
 }
 
-.arpeggio-border p {
+.arpeggio-card:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.arpeggio-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.arpeggio-card p {
     color: #333;
-    margin-bottom: 0;
+    line-height: 1.5;
+    margin: 10px 0 0;
 }
 
+.arpeggio-card .vf-notation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    margin: 6px 0;
+}
+
+.arpeggio-card .vf-notation svg,
+.arpeggio-card .vf-notation canvas {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+@media (min-width: 769px) {
+    .arpeggio-card {
+        padding: 24px 28px;
+    }
+}

@@ -48,6 +48,18 @@ export default function useVexFlowStave({
       .addClef(clef);
 
     vf.draw();
+
+    // VexFlow doesn't justify a single voice to fill the stave, so the
+    // canvas is left much wider than the drawn notes. Trim it to the
+    // actual ink so flexbox centering centers the notation, not blank space.
+    const svg = container.querySelector('svg');
+    if (svg) {
+      const bbox = svg.getBBox();
+      const trimmedWidth = Math.ceil(bbox.x + bbox.width + bbox.x);
+      svg.setAttribute('width', trimmedWidth);
+      svg.setAttribute('viewBox', `0 0 ${trimmedWidth} ${height}`);
+      svg.style.width = `${trimmedWidth}px`;
+    }
   }, [id, notes, time, clef, stem, width, height, systemWidthOffset]);
 
   return id;
