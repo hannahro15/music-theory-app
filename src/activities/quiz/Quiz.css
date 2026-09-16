@@ -2,14 +2,15 @@
 .quiz-page {
   font-family: 'Georgia', serif;
   max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  margin: 32px auto;
+  padding: 40px;
+  border-radius: 14px;
   background-image: url('./background-img.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  min-height: 100vh;
+  min-height: calc(100vh - 64px);
 }
 
 .quiz-page h1 {
@@ -201,7 +202,8 @@
 /* Tablet styles (768px and below) */
 @media screen and (max-width: 768px) {
   .quiz-page {
-    padding: 15px;
+    margin: 20px auto;
+    padding: 24px 15px;
     background-attachment: scroll;
     /* Better performance on mobile */
   }
@@ -240,7 +242,8 @@
 /* Mobile styles (480px and below) */
 @media screen and (max-width: 480px) {
   .quiz-page {
-    padding: 10px;
+    margin: 12px auto;
+    padding: 16px 10px;
   }
 
   .quiz-page .quiz-container {
@@ -307,7 +310,8 @@
 /* Extra small screens (320px and below) */
 @media screen and (max-width: 320px) {
   .quiz-page {
-    padding: 8px;
+    margin: 8px auto;
+    padding: 12px 8px;
   }
 
   .quiz-page .quiz-container {
@@ -338,7 +342,8 @@
 /* Landscape orientation adjustments */
 @media screen and (max-height: 500px) and (orientation: landscape) {
   .quiz-page {
-    padding: 10px;
+    margin: 10px auto;
+    padding: 16px 10px;
   }
 
   .quiz-page .quiz-container {
