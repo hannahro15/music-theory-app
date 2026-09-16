@@ -1,5 +1,6 @@
 import './App.css'
 import Navbar from './components/layout/Navbar.jsx'
+import Footer from './components/layout/Footer.jsx'
 import { Routes, Route } from 'react-router-dom'
 import Scales from './theory/scales/Scales.jsx'
 import Home from './pages/home/Home.jsx'
@@ -31,6 +32,7 @@ export default function App() {
         <Route path="/instrument/violin/technique" element={<h1>Violin Technique</h1>} />
         <Route path="/instrument/violin/excerpts" element={<h1>Violin Excerpts</h1>} />
       </Routes>
+      <Footer />
     </div>
   )
 }
