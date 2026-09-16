@@ -21,12 +21,10 @@ export default function Intervals() {
         <div className="interval-card">
           <h2>Minor 2nd</h2>
           <Min2nd />
-          <p>This interval is semitone apart (neighbouring notes).</p>
         </div>
         <div className="interval-card">
           <h2>Major 2nd</h2>
           <Maj2nd />
-          <p>This interval is two semitones apart (or a tone). </p>
         </div>
         <div className="interval-card">
           <h2>Minor 3rd</h2>
@@ -43,7 +41,6 @@ export default function Intervals() {
         <div className="interval-card">
           <h2>Tritone (or augmented 4th)</h2>
           <Tritone />
-          <p>A tritone is also known as an diminished 5th but then the interval would be from a C to a Gb. (It still sounds the same, but different naming conventions).</p>
         </div>
         <div className="interval-card">
           <h2>Perfect 5th</h2>
