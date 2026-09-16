@@ -4,8 +4,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Commands
 
-All commands run from this directory (`music-theory-project/`) — the repo root one level up contains only this project folder and `.git`.
-
 ```bash
 npm install       # install dependencies
 npm run dev       # start Vite dev server at http://localhost:5173
@@ -35,12 +33,9 @@ Many routes in `App.jsx` are still placeholder `<h1>` elements (e.g. Circle of F
 
 ### Notation rendering pattern
 
-Every per-concept notation component (scales, intervals, arpeggios) follows the same VexFlow pattern:
+Every per-concept notation component (scales, intervals, arpeggios) renders a `<Notation notes="..." time="..." />` (`src/components/notation/Notation.jsx`), which wraps the `useVexFlowStave` hook (`src/hooks/useVexFlowStave.js`). The hook generates a unique container id per instance via `useId()`, builds the VexFlow `Factory`/`EasyScore`/`System`, and draws — so components never need to manage ids or VexFlow setup themselves.
 
-1. Render a `<div>` with a unique `id`.
-2. In a `useEffect`, look up that container by `id`, clear it (`container.innerHTML = ''`), then build a VexFlow `Factory` targeting that same `elementId`, add staves/voices via `vf.EasyScore()` / `vf.System()`, and call `vf.draw()`.
-
-When adding a new scale/interval/arpeggio, copy an existing sibling component (e.g. `MajorScale.jsx`) rather than building the VexFlow setup from scratch, and give the container a unique `id` — colliding ids across simultaneously-rendered components will break rendering.
+`useVexFlowStave` also accepts `clef`, `stem`, `width` (a number, or a `(container) => number` function for responsive sizing — see `responsiveIntervalWidth`, used by every interval component), `height`, and `systemWidthOffset` (used by `MelodicMinorScale` for its wider/taller stave). When adding a new scale/interval/arpeggio, copy an existing sibling component (e.g. `MajorScale.jsx`) and just change the `notes`/`time`.
 
 ### Styling
 
