@@ -17,82 +17,58 @@ export default function Intervals() {
     <div className="intervals-page">
       <h1>Intervals Page</h1>
       <p>This is the Intervals page showing all the different intervals.</p>
-      <div className="intervals-flex">
-      <div className="interval-div">
-      <h2>Minor 2nd</h2>
-      <div className="interval-notation">
-        <Min2nd />
-      </div>
-      <p>This interval is semitone apart (neighbouring notes).</p>
-      </div>
-      <div className="interval-div">
-      <h2>Major 2nd</h2>
-      <div className="interval-notation">
-        <Maj2nd />
-      </div>
-      <p>This interval is two semitones apart (or a tone). </p>
-      </div>
-      <div className="interval-div">
-      <h2>Minor 3rd</h2>
-      <div className="interval-notation">
-        <Min3rd />
-      </div>
-      </div>
-      <div className="interval-div">
-      <h2>Major 3rd</h2>
-      <div className="interval-notation">
-        <Maj3rd />
-      </div>
-      </div>
-      <div className="interval-div">
-      <h2>Perfect 4th</h2>
-      <div className="interval-notation">
-        <Perfect4th />
-      </div>
-      </div>
-      <div className="interval-div">
-      <h2>Tritone (or augmented 4th)</h2>
-      <div className="interval-notation">
-        <Tritone />
-      </div>
-      <p>A tritone is also known as an diminished 5th but then the interval would be from a C to a Gb. (It still sounds the same, but different naming conventions).</p>
-      </div>
-      <div className="interval-div">
-      <h2>Perfect 5th</h2>
-      <div className="interval-notation">
-        <Perfect5th />
-      </div>
-      </div>
-      <div className="interval-div">
-      <h2>Minor 6th</h2>
-      <div className="interval-notation">
-        <Min6th />
-      </div>
-      </div>
-      <div className="interval-div">
-      <h2>Major 6th</h2>
-      <div className="interval-notation">
-        <Maj6th />
-      </div>
-      </div>  
-      <div className="interval-div">
-      <h2>Minor 7th</h2>
-      <div className="interval-notation">
-        <Min7th />
-      </div>
-      </div>
-      <div className="interval-div">
-      <h2>Major 7th</h2>
-      <div className="interval-notation">
-        <Maj7th />
-      </div>
-      </div>
-      <div className="interval-div">
-      <h2>Octave</h2>
-      <div className="interval-notation">
-        <Octave />
-      </div>
-      </div>
+      <div className="intervals-grid">
+        <div className="interval-card">
+          <h2>Minor 2nd</h2>
+          <Min2nd />
+          <p>This interval is semitone apart (neighbouring notes).</p>
+        </div>
+        <div className="interval-card">
+          <h2>Major 2nd</h2>
+          <Maj2nd />
+          <p>This interval is two semitones apart (or a tone). </p>
+        </div>
+        <div className="interval-card">
+          <h2>Minor 3rd</h2>
+          <Min3rd />
+        </div>
+        <div className="interval-card">
+          <h2>Major 3rd</h2>
+          <Maj3rd />
+        </div>
+        <div className="interval-card">
+          <h2>Perfect 4th</h2>
+          <Perfect4th />
+        </div>
+        <div className="interval-card">
+          <h2>Tritone (or augmented 4th)</h2>
+          <Tritone />
+          <p>A tritone is also known as an diminished 5th but then the interval would be from a C to a Gb. (It still sounds the same, but different naming conventions).</p>
+        </div>
+        <div className="interval-card">
+          <h2>Perfect 5th</h2>
+          <Perfect5th />
+        </div>
+        <div className="interval-card">
+          <h2>Minor 6th</h2>
+          <Min6th />
+        </div>
+        <div className="interval-card">
+          <h2>Major 6th</h2>
+          <Maj6th />
+        </div>
+        <div className="interval-card">
+          <h2>Minor 7th</h2>
+          <Min7th />
+        </div>
+        <div className="interval-card">
+          <h2>Major 7th</h2>
+          <Maj7th />
+        </div>
+        <div className="interval-card">
+          <h2>Octave</h2>
+          <Octave />
+        </div>
       </div>
     </div>
   );
