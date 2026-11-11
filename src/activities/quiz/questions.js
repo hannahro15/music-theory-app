@@ -2,7 +2,7 @@
 
 export const quizData = [
   {
-    question: "What was Edward Elgar's dog called?",
+    question: "Variation XI of Elgar's Enigma Variations pictures G. R. Sinclair's bulldog. What was the dog called?",
     options: [
       "Desmond",
       "Darren",
@@ -12,7 +12,7 @@ export const quizData = [
     correctAnswer: 2
   },
   {
-    question: "When was Brahm's Academic Festival Overture composed?",
+    question: "When was Brahms's Academic Festival Overture composed?",
     options: [
       "1865",
       "1870",
@@ -22,7 +22,7 @@ export const quizData = [
     correctAnswer: 3
   },
   {
-    question: "Benjamin Britten/Lennox Berkeley wrote a suite of Catalan dances called Mont Juic. Mont Juic is a jewish mountain and is based in which spanish city?",
+    question: "Benjamin Britten and Lennox Berkeley wrote a suite of Catalan dances called Mont Juic, named after Montjuïc, a hill whose name may mean 'mountain of the Jews'. In which Spanish city is it?",
     options: [
       "Madrid",
       "Barcelona",
