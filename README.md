@@ -1,4 +1,3 @@
-
 # music-theory-app
 
 This is an interactive web application designed to help users learn and explore music theory concepts visually and intuitively. Whether you're a beginner or an advanced musician, this app provides clear explanations, interactive diagrams, and accurate music notation to make learning music theory engaging and accessible. Built with modern web technologies, it offers a seamless and responsive experience across devices.
@@ -49,25 +48,26 @@ There is no longer any automatic deployment via GitHub Actions. All deployments 
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js (v18 or newer recommended)
 - npm
 
 ### Installation
-1. Clone the repository:
-	```bash
-	git clone https://github.com/hannahro15/music-theory-app.git
-	cd music-theory-app
-	```
-2. Install dependencies:
-	```bash
-	npm install
-	```
-3. Start the development server:
-	```bash
-	npm run dev
-	```
-4. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/hannahro15/music-theory-app.git
+   cd music-theory-app
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## Technologies Used
 
@@ -82,3 +82,7 @@ There is no longer any automatic deployment via GitHub Actions. All deployments 
 - `src/components/` — Reusable components for music notation and layout
 - `public/` — Static assets
 - `index.html` — Main HTML entry point
+
+## Contributing
+
+This is a personal project, so I'm not accepting pull requests. If you spot a bug or a mistake in the music theory, please [open an issue](https://github.com/hannahro15/music-theory-app/issues).
